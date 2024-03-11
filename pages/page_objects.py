@@ -10,7 +10,7 @@ class PageObjects:
     #Buttons
     submit_button = '//button[@data-selen="login-submit"]'
     cookie_button_ok = '//button[text()="OK"]'
-    login_button = '//button[@data-testid="account-info-logged-false"]'
+    login_button = '//button[text()="Cont"]'
     account_button = '//button[@data-testid="account-info-logged-true"]'
     login_error = '//div[@class="sc-TmdmN kRNdCB"]'
     no_email_error = '//div[@data-name="login[username]"]//div[@class="text-field__ErrorMessage-sc-1vll61a-4 WGIUj"]'
@@ -18,7 +18,7 @@ class PageObjects:
     logo_image = '//a[@data-testid="brand-logo-button"]'
     register_button = '//button[text()="Creează cont"]'
     wishlist_button = '//div[@data-testid="header_heart"]/a'
-    cart_button = '//button[@data-testid="cart-button"]'
+    cart_button = '//button[text()="Coș"]'
     help_button = '//span[text()="Ajutor și contact"]'
     register_email = '//input[@data-selen="register-email"]'
     register_firstName = '//input[@data-selen="firstname"]'
