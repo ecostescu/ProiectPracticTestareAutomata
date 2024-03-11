@@ -1,10 +1,10 @@
 Feature: Register user
   Background:
   Given I navigate to home page
-    And I navigate to register page
 
+    @register_feature
     Scenario: Successful Register
-    And I enter my email
-    And I enter my password
-    And I click on Submit button
-    Then I should be logged in with my user
+    When I navigate to login
+    And I navigate to register page
+    And I enter valid register data
+    And I click on register

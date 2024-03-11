@@ -11,7 +11,7 @@ def step_impl(context):
 
 @when("I navigate to login")
 def step_impl(context):
-    time.sleep(2)
+    time.sleep(200)
     context.homepage.go_to_login()
 
 
