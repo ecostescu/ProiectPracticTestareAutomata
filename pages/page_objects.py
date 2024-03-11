@@ -16,7 +16,7 @@ class PageObjects:
     no_email_error = '//div[@data-name="login[username]"]//div[@class="text-field__ErrorMessage-sc-1vll61a-4 WGIUj"]'
     no_password_error = '//div[@data-name="login[password]"]//div[@class="text-field__ErrorMessage-sc-1vll61a-4 WGIUj"]'
     logo_image = '//a[@data-testid="brand-logo-button"]'
-    register_button = '//a[@data-testid="register-select"]'
+    register_button = '//button[text()="Creează cont"]'
     wishlist_button = '//div[@data-testid="header_heart"]/a'
     cart_button = '//button[@data-testid="cart-button"]'
     help_button = '//span[text()="Ajutor și contact"]'

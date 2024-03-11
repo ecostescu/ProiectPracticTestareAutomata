@@ -4,47 +4,47 @@ Feature: Login
     When I navigate to login
 
   Scenario: Successful Login
-    And I enter my email
+    When I enter my email
     And I enter my password
     And I click on Submit button
     Then I should be logged in with my user
 
 
   Scenario: Incorrect e-mail
-    And I enter incorrect email
+    When I enter incorrect email
     And I enter my password
     And I click on Submit button
     Then I should receive an error message
 
 
   Scenario: Incorrect password
-    And I enter my email
+    When I enter my email
     And I enter incorrect password
     And I click on Submit button
     Then I should receive an error message
 
 
   Scenario: Empty email field
-    And I enter no email
+    When I enter no email
     And I enter my password
     And I click on Submit button
     Then I should see the validation error that the email is required
 
 
    Scenario: Empty password field
-    And I enter my email
+    When I enter my email
     And I enter no password
     And I click on Submit button
     Then I should see the validation error that the password is required
 
 
    Scenario: Email not formatted correctly
-     And I enter invalid email
+     When I enter invalid email
      Then I should see the validation error that only valid characters must be added
 
 
   Scenario Outline: Incorrect e-mail and password set
-    And I enter an incorrect "<email>" and "<password>"
+    When I enter an incorrect "<email>" and "<password>"
     And I click on Submit button
     Then I should receive an error message
     Examples:

@@ -8,3 +8,4 @@ Feature: Register user
     And I navigate to register page
     And I enter valid register data
     And I click on register
+    Then I should be logged in with my user
