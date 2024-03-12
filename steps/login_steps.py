@@ -1,13 +1,16 @@
 from behave import *
+import time
 
 
 @when("I enter my email")
 def step_impl(context):
+    time.sleep(2)
     context.loginpage.set_email(context.config.userdata['email'])
 
 
 @when("I enter my password")
 def step_impl(context):
+    time.sleep(2)
     context.loginpage.set_password(context.config.userdata['password'])
 
 
@@ -18,11 +21,13 @@ def step_impl(context):
 
 @when("I enter incorrect email")
 def step_impl(context):
+    time.sleep(2)
     context.loginpage.set_email(context.config.userdata['incorrect_email'])
 
 
 @when("I enter incorrect password")
 def step_impl(context):
+    time.sleep(2)
     context.loginpage.set_password(context.config.userdata['incorrect_password'])
 
     

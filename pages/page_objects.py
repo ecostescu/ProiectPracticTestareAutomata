@@ -10,7 +10,7 @@ class PageObjects:
     #Buttons
     submit_button = '//button[@data-selen="login-submit"]'
     cookie_button_ok = '//button[text()="OK"]'
-    login_button = '//button[text()="Cont"]'
+    login_button = '//button[@data-testid="account-info-logged-false"]'
     account_button = '//button[@data-testid="account-info-logged-true"]'
     login_error = '//div[@class="sc-TmdmN kRNdCB"]'
     no_email_error = '//div[@data-name="login[username]"]//div[@class="text-field__ErrorMessage-sc-1vll61a-4 WGIUj"]'
